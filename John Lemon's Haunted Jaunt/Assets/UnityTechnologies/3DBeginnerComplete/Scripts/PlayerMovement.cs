@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     void Start ()
     {
         m_Animator = GetComponent<Animator> ();
-        m_Rigidbody = GetComponent<Rigidbody> ();
+        m_Rigidbody = GetComponent<Rigidbody> (); 
         m_AudioSource = GetComponent<AudioSource> ();
         
         MoveAction.Enable();
