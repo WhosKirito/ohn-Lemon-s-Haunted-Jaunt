@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class _ : MonoBehaviour
 {
-     
+     public float fadeDuration = 1f;
+     bool m_IsPlayerAtExit
+     public GameObject player;
+
+     public CanvasGroup
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +20,15 @@ public class _ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-         float vertical = Input.GetAxis("Vertcal");
+        
+        
+    }
 
-        
-        
+    void void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject == player)
+        {
+            m_IsPlayerAtExit = true;
+        }        
     }
 }
